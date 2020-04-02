@@ -1898,7 +1898,7 @@ var validateFileURL = void 0;
         return;
       }
       var fileOrigin = new URL(file, window.location.href).origin;
-      if (fileOrigin !== viewerOrigin && REMOTE_FILE_ORIGINS.indexOf(viewerOrigin) == -1) {
+      if (fileOrigin !== viewerOrigin && REMOTE_FILE_ORIGINS.indexOf(fileOrigin) == -1) {
         throw new Error('file origin does not match viewer\'s/whitelisted');
       }
     } catch (ex) {
