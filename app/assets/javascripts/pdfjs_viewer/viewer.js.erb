@@ -1899,7 +1899,7 @@ var validateFileURL = void 0;
       }
       var fileOrigin = new URL(file, window.location.href).origin;
       if (fileOrigin !== viewerOrigin && REMOTE_FILE_ORIGINS.indexOf(viewerOrigin) == -1) {
-        throw new Error('file origin does not match viewer's/whitelisted);
+        throw new Error('file origin does not match viewer\'s/whitelisted);
       }
     } catch (ex) {
       var message = ex && ex.message;
