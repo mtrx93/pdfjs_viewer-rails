@@ -1,13 +1,19 @@
 # pdfjs_viewer-rails
 
-[![Build Status](https://travis-ci.org/senny/pdfjs_viewer-rails.svg?branch=master)](https://travis-ci.org/senny/pdfjs_viewer-rails)
+Forked from senny/pdfjs_viewer-rails
+
+Modified to accept pdfs from whitelisted hosts specified in env
+
+```
+PDFJS_REMOTE_ORIGINS=some_host,other_host
+```
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'pdfjs_viewer-rails'
+gem 'pdfjs_viewer-rails', github: 'mtrx93/pdfjs_viewer-rails'
 ```
 
 *Note: pdfjs_viewer-rails is still in early development. Please report if you encounter any issues along the way.*
