@@ -1,5 +1,6 @@
 require "pdfjs_viewer-rails/version"
 require "pdfjs_viewer-rails/helpers"
+require "pdfjs_viewer-rails/configuration"
 
 module PdfjsViewer
   class << self
