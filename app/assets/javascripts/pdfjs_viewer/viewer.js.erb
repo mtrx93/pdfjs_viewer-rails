@@ -1884,7 +1884,7 @@ var PDFViewerApplication = {
     _boundEvents.windowAfterPrint = null;
   }
 };
-var REMOTE_FILE_ORIGINS = <%= ENV.fetch("PDFJS_REMOTE_ORIGINS", "").split(",").inspect %>;
+var REMOTE_FILE_ORIGINS = <%= PdfjsViewer.configuration.allowed_origins.inspect %>;
 var validateFileURL = void 0;
 {
   var HOSTED_VIEWER_ORIGINS = ['null', 'http://mozilla.github.io', 'https://mozilla.github.io'];
